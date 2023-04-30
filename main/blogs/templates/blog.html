@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<main>
+<div class="blog">
+  <img src={{blog.featured_image.url}} alt="default.png" style="width:100%">
+  <div class="content">
+    <h4><b>{{blog.title}}</b></h4> 
+    <p>{{blog.description}}</p> 
+    <p>{{blog.content}}</p>
+  </div>
+</div>
+</main>
+
+{% endblock %}
