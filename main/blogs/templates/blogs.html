@@ -1,8 +1,7 @@
 {% extends 'main.html' %} 
 {% block content %}
 {% load static %}
-  <link rel="stylesheet" href="{% static 'styles/app.css' %}" />
-
+<link rel="stylesheet" href="{% static 'styles/app.css' %}" />
 <div class="container">
 {% for blog in blogs %}
 <a href="{% url 'blog' blog.id %}"><div class="card">
