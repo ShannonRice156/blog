@@ -1,16 +1,14 @@
-{% extends 'main.html' %}
-
+{% extends 'main.html' %} 
 {% block content %}
+{% load static %}
+  <link rel="stylesheet" href="{% static 'styles/app.css' %}" />
 
-<main>
-<div class="blog">
-  <img src={{blog.featured_image.url}} alt="default.png" style="width:100%">
-  <div class="content">
-    <h4><b>{{blog.title}}</b></h4> 
-    <p>{{blog.description}}</p> 
-    <p>{{blog.content}}</p>
-  </div>
-</div>
-</main>
 
-{% endblock %}
+<article>
+  <h2>{{blog.title}}</h2>
+  <p>{{blog.description}}</p>
+  <img src={{blog.featured_image.url}} alt="Blog Post Image">
+  <p>{{blog.content}}</p>
+</article>
+
+{% endblock content %}

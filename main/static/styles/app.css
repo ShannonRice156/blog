@@ -1,7 +1,7 @@
 .header {
   display: inline-block;
   background-color: 0 9px #999;
-  height:20%;
+  height: 20%;
 }
 
 .button {
@@ -28,7 +28,7 @@
   transform: translateY(4px);
 }
 
-.main { 
+.main {
   background-color: #DDD0C8;
   padding: 0%;
   margin: 0%;
@@ -54,6 +54,7 @@
 .card:hover {
   box-shadow: 0 8px 16px 0 #5e635f;
 }
+
 .card::content {
   margin-left: auto;
   margin-right: auto;
@@ -75,23 +76,39 @@ img {
   border-radius: 5px 5px 5px 5px;
 }
 
-.blog {
-    box-shadow: 0 4px 8px 0 #6e726e;
-    transition: 0.3s;
-    width: 80%;
-    min-height:80vh;
-    height:max-content;
-    border-radius: 5px 5px 5px 5px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 2pt;
-    outline-color: #5e635f
+article {
+  box-shadow: 0 4px 8px 0 #6e726e;
+  transition: 0.3s;
+  width: 80%;
+  min-height: 80vh;
+  height: max-content;
+  border-radius: 5px 5px 5px 5px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2pt;
+  outline-color: #5e635f;
+  overflow: auto;
+
 }
-.blog::content {
+
+article::content {
   margin-left: auto;
   margin-right: auto;
   text-indent: 30;
+}
+
+p {
+  color: #6e726e;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+h1 {
+  color: #6e726e;
+}
+h2 {
+  color: #6e726e;
 }
 a:link {
   text-decoration: none;
@@ -109,59 +126,41 @@ a:hover {
   text-decoration: none;
   color: #6e726e;
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #DDD0C8;
-  z-index: 1;
+div {
+  outline: none;
 }
 
-li {
-  float: right;
-  font-size: 40px;
+div > form {
+  width: 50%;
+  margin: auto auto;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-
-li a {
-  display: block;
-  color: #6e726e;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  text-decoration: underline;
-}
-
-li.leftimg {
-  float: left;
-  font-size: 40px;
-}
-li.leftimg a {
+form > label {
   display: inline-block;
-  color: #6e726e;
-  padding: 14px 16px;
-  text-decoration: none;
-  margin-left: 0%;
-}
-li.left {
-  float: left;
-  font-size: 40px;
+  width: 200px;
+ 
 }
 
-li.left a {
-  display: inline-block;
-  color: #6e726e;
-  text-decoration: none;
-  margin-left: 0%;
-  margin-top: 50%;
+form > input {
+  align-self: center;
+  width: 200px;
+  text-align: left;
+  padding-right: 10px;
 }
 
-a:active {
-  float: left;
-  font-size: 40px;
+form > h1 {
+  text-align: right;
+  padding-left: 10px;
+  align-self: center;
+  width: 200px;
+}
+
+form > button {
+  padding-left: 10px;
+  align-self: center;
+  width: 200px;
+  align-content: center;
+
 }

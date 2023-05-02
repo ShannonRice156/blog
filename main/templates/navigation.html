@@ -1,13 +1,13 @@
 {% load static %}
 <head>
-  <ul>
-    <li class="leftimg"><img src ="{% static 'images/default.png' %}"></li>
-    <li class="left"><a href="">BLOGIT</a></li>
-    <li><a href="">Login</a></li>
-    <li><a href="">Account</a></li>
-    <li><a href="">My Blogs</a></li>
-    <li><a href="">All Blogs</a></li>
-    
-</ul>
-
+  <link rel="stylesheet" href="{% static 'styles/nav.css' %}" />
+  <div>
+    <img src="{% static 'images/logo.png' %}">
+  <nav>
+    <a href="{% url 'blogs' %}">All Blogs</a>
+    <a href="{% url 'blogs' %}">My Blogs</a>
+    <a href="{% url 'account' %}">Account</a>
+    <a href="{% url 'login' %}">Login</a>
+  </nav>
+</div>
 </head>
