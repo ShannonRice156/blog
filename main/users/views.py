@@ -11,12 +11,14 @@ def login_page(request):
         username = request.POST['username'].lower()
         password = request.POST['password']
         try:
+            print("try entered")
             user = User.objects.get(username=username)
         except:
-
-        user = authenticate(request, username=username, password=password)
+            print("catch entered")
+            user = authenticate(request, username=username, password=password)
 
         if user is not None:
+            print("user not none")
             login(request, user)
             return redirect(request, 'blogs')
 

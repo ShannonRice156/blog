@@ -13,46 +13,46 @@
   text-decoration: none;
   outline: none;
   color: #AC3B61;
-  background-color: #6e726e;
+  background-color: #424442;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 
 .button:hover {
-  background-color: #5e635f
+  background-color: #424442
 }
 
 .button:active {
-  background-color: #5e635f;
+  background-color: #424442;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
 .main {
-  background-color: #DDD0C8;
+  background-color: #ffffff;
   padding: 0%;
   margin: 0%;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 #DDD0C8;
+  box-shadow: 0 4px 8px 0 #ffffff;
   transition: 0.3s;
-  background-color: #DDD0C8;
+  background-color: #ffffff;
   width: 300px;
   height: 300px;
   border-radius: 5px 5px 5px 5px;
   text-align: center;
   margin-left: 5px;
-  color: #5e635f;
+  color: #424442;
   margin-right: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
   outline: 2pt;
-  outline-color: #5e635f;
+  outline-color: #424442;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 #5e635f;
+  box-shadow: 0 8px 16px 0 #424442;
 }
 
 .card::content {
@@ -77,7 +77,7 @@ img {
 }
 
 article {
-  box-shadow: 0 4px 8px 0 #6e726e;
+  box-shadow: 0 4px 8px 0 #424442;
   transition: 0.3s;
   width: 80%;
   min-height: 80vh;
@@ -87,7 +87,7 @@ article {
   margin-left: auto;
   margin-right: auto;
   outline: 2pt;
-  outline-color: #5e635f;
+  outline-color: #424442;
   overflow: auto;
 
 }
@@ -99,32 +99,32 @@ article::content {
 }
 
 p {
-  color: #6e726e;
+  color: #424442;
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
 }
 h1 {
-  color: #6e726e;
+  color: #424442;
 }
 h2 {
-  color: #6e726e;
+  color: #424442;
 }
 a:link {
   text-decoration: none;
-  color: #6e726e;
+  color: #424442;
 }
 
 
 a:visited {
   text-decoration: none;
-  color: #6e726e;
+  color: #424442;
 }
 
 
 a:hover {
   text-decoration: none;
-  color: #6e726e;
+  color: #424442;
 }
 div {
   outline: none;

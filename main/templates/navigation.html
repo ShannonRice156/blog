@@ -1,13 +1,17 @@
 {% load static %}
-<head>
-  <link rel="stylesheet" href="{% static 'styles/nav.css' %}" />
-  <div>
-    <img src="{% static 'images/logo.png' %}">
-  <nav>
-    <a href="{% url 'blogs' %}">All Blogs</a>
-    <a href="{% url 'blogs' %}">My Blogs</a>
-    <a href="{% url 'account' %}">Account</a>
-    <a href="{% url 'login' %}">Login</a>
+<head>  <div>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img class="navbar-brand" width="300" height="400" src="{% static 'images/logo.png' %}">
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="{% url 'blogs' %}">All Blogs</a></li>
+      <li><a href="{% url 'blogs' %}">My Blogs</a></li>
+      <li><a href="{% url 'login' %}">Login</a></li>
+    </ul>
+  </div>
   </nav>
 </div>
 </head>
